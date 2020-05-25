@@ -2,7 +2,7 @@
   "name": "redux-bees",
   "version": "0.1.11",
   "description": "A nice, declarative way of managing JSON API calls with Redux",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "prepublish": "rimraf lib && mkdir lib && npm run lib",
     "start": "webpack-dev-server --open",
