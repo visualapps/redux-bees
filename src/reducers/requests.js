@@ -65,8 +65,8 @@ export default function reducer(state = initialState, action) {
     let newState = state;
 
     if (action.payload.body) {
-      const { data, meta } = action.payload.body;
-
+      const {meta } = action.payload.body;
+      let data = action.payload.body;
       let normalizedData;
 
       if (Array.isArray(data)) {
@@ -170,4 +170,3 @@ export default function reducer(state = initialState, action) {
 
   return state;
 }
-

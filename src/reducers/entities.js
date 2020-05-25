@@ -11,8 +11,8 @@ export default function reducer(state = initialState, action) {
 
   if (metaType === 'response' && action.payload && action.payload.body) {
     let newState = state;
-    const { data, included } = action.payload.body;
-
+    const {included } = action.payload.body;
+    const data = action.payload.body;
     let items;
 
     if (Array.isArray(data)) {
@@ -40,4 +40,3 @@ export default function reducer(state = initialState, action) {
 
   return state;
 }
-
